@@ -1,7 +1,7 @@
 
 import pyowm
 from newsapi import NewsApiClient
-owm = pyowm.OWM('d45028b6f86ba925fb1e5b0795fe7a3a')
+owm = pyowm.OWM('')
 observation = owm.weather_at_place('Krasnoyarsk')
 w = observation.get_weather()
 d=w.get_temperature('celsius')
